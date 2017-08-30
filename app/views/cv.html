@@ -1,0 +1,201 @@
+<md-content>
+  <md-toolbar>
+    <h2 style="padding-left: 20px;" flex>Sebastian Laitila</h2>
+  </md-toolbar>
+  <md-toolbar class="md-hue-2" layout="row">
+    <span flex></span><h3 >Curriculum vitae</h3><span flex></span>
+  </md-toolbar>
+<md-content layout = "column">
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('aboutMe')" layout="row"><span flex></span><h5>About Me</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.aboutMe">
+    <div layout = "row">
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Sebastian Laitila</span>
+            <span class="md-subhead">Born in 15.03.1982 in Västerås</span>
+            <span class="md-subhead">Master of Arts since 2012, Technical communications, University of Vaasa</span>
+            <span class="md-subhead">Versatile front end developer specialized in prototyping, web, mobile and desktop C# AngularJS and Unity development</span>
+            <span class="md-subhead">Also skilled in graphic design, video and audio. Loves hackathons, house music and flipping a tractor wheel at the gym.</span>
+            <span class="md-subhead">Father of 2 and 4 year old kids and hobbyist game developer.</span>
+          </md-card-title-text>
+          <md-card-title-media class = "md-padding">
+            <img src = "/app/content/selfie.jpg" class = "md-media-md card-media">
+        </md-card-title-media>
+        </md-card-title>
+      </md-card>
+    </div>
+  </md-content>
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('work')" layout="row"><span flex></span><h5>Work experience</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.work">
+    <md-list>
+      <md-subheader class="md-no-sticky">Recent work</md-subheader>
+      <md-list-item class="md-3-line">
+        <img class="work-image" src="/app/content/arnon.png" />
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Development engineer, Arnon, 2014-</h3>
+          <h4>R&D of new IOT technologies, in web, mobile and desktop.</h4>
+          <p>My first permanent vacancy, where I have mostly been working on applications for sorting and displaying different forms of IOT data to a
+            large range of consumer devices. Most recently I have worked on making a finished product of the industrial AR prototype which I developed
+            late spring of the ongoing year. I have been able to follow and learn new technologies during the years I have worked with these projects,
+            ranging from asp.net to node.js and AngularJS and VueJS to Unity3d</p>
+        </div>
+      </md-list-item>
+      <md-list-item class="md-3-line">
+        <img class="work-image" src="/app/content/lemonsoft.jpg" />
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Application developer, Lemonsoft, 2013-2014</h3>
+          <h4>Temporary work Making the XML conversion module to convert Tocoman data to Lemonsoft. Also made several tailored Crystal Reports templates for customers.</h4>
+          <p>As my first exclusively software development job, this temporary vacancy taught me the importance of clean code, documentation and following best practice,
+            as the Lemonsoft software itself was at the time 1,5 million lines of code.</p>
+        </div>
+      </md-list-item>
+      <md-list-item class="md-3-line">
+        <img class="work-image" src="/app/content/citec.jpg" />
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Documentation engineer, Citec/Staffpoint, 2012-2013</h3>
+          <h4>Temporary work as a document controller and occasional software developer.</h4>
+          <p>Developing some small helper applications alongside work with Excel and C#.</p>
+        </div>
+      </md-list-item>
+      <md-list-item class="md-3-line">
+        <img class="work-image" src="/app/content/ely.png" />
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Graphic designer, Centre for Economic Development, Transport and the Environment, 2012</h3>
+          <h4>Temporary work during the latter half of a maternal leave.</h4>
+          <p>Mostly refactoring outsourced InDesign templates for use of people working in ELY communications around the country and working on some of the publications.</p>
+        </div>
+      </md-list-item>
+      <md-subheader>Student work and half time work</md-subheader>
+      <md-list-item class = "md-3-line">
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Substitute teacher at Variska and Huutoniemi primary school. 2010-2012</h3>
+        </div>
+      </md-list-item>
+      <md-list-item class = "md-3-line">
+         <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Editor-in-chied, Vaasan Ylioppilaslehti, 2008-2009</h3>
+        </div>
+      </md-list-item>
+      <md-list-item class = "md-3-line">
+        <div class = "md-list-item-text md-padding" layout="column">
+          <h3>Editor-in-chied, Vaasan Ylioppilaslehti, 2008-2009</h3>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-content>
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('projects')" layout="row"><span flex></span><h5>Things I have done recently</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.projects">
+      <md-card>
+        <md-card-title>
+          <md-card-title-media class = "md-padding">
+            <img src = "/app/content/cosmosar.jpg" class = "md-media-lg card-media">
+          </md-card-title-media>
+          <md-card-title-text>
+            <md-headline>Cosmos AR (2017)</md-headline>
+            <span class="md-subhead">
+              First started out as a Vuforia demo, but eventually grew into an ar application where AR markers are covered
+              with a 3d panel. The demo used the whole cabinet as an AR marker, which is a working tailored solution, but would
+              prove problematic as a generic app if the cabinets are similar to each other.
+            </span>
+          </md-card-title-text>
+
+        </md-card-title>
+      </md-card>
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <md-headline>Cosmos dashboard (2017)</md-headline>
+            <span class="md-subhead">
+              IOT Dashboard editor using Freeboard with KnockoutJS. A BI panel which displays IOT data from our Azure web API,
+              which I have used for Cosmos AR.
+            </span>
+          </md-card-title-text>
+          <md-card-title-media class = "md-padding">
+            <img src = "/app/content/dashboard.jpg" class = "md-media-lg card-media">
+          </md-card-title-media>
+        </md-card-title>
+      </md-card>
+      <md-card>
+        <md-card-title>
+          <md-card-title-media class = "md-padding">
+            <img src = "/app/content/retrocruise.jpg" class = "md-media-lg card-media">
+          </md-card-title-media>
+          <md-card-title-text>
+            <md-headline>Retro Cruise (2017)</md-headline>
+            <span class="md-subhead">
+              My second mobile game. A cross between a runner and an Outrun/Lotus style driving game available for Android.
+            </span>
+            <span class="md-subhead">
+              <a href="https://play.google.com/store/apps/details?id=com.aarreentertainment.vapordrive" target="_blank">Google Play link</a>
+            </span>
+          </md-card-title-text>
+
+        </md-card-title>
+      </md-card>
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <md-headline>Aarre (2016-2017)</md-headline>
+            <span class="md-subhead">
+              My first game which I made with the help of my then 3 year old daughter. Flawed, as first games are, but I am proud of it
+              and the learning process in the making of the game.
+            </span>
+            <span class="md-subhead">
+              <a href="https://play.google.com/store/apps/details?id=com.unity.aarregame" target="_blank">Google Play link</a>
+            </span>
+          </md-card-title-text>
+          <md-card-title-media class = "md-padding">
+            <img src = "/app/content/aarre.jpg" class = "md-media-lg card-media">
+          </md-card-title-media>
+        </md-card-title>
+      </md-card>
+  </md-content>
+
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('school')" layout="row"><span flex></span><h5>Education and degrees</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.school">
+    <h3>MA, University of Vaasa, 2007-2012</h3>
+    <h5>Technical communication with digital culture, cross-cultural communication and education theory</h5>
+    <h3>Incomplete engineering studies, VAMK, 2003-2007</h3>
+    <h5>Telecommunications and Software development</h5>
+  </md-content>
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('skills')" layout="row"><span flex></span><h5>Skills</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.skills">
+    <h4>Environments/technologies</h4>
+    <p>
+      AngularJS, VueJS, Webpack, Ionic, Node.js and Express, Unity3d, MS Visual Studio and Monodevelop with c# and vb.net, databases with MongoDB and MySQL. Also familiar with several AR technologies.
+    </p>
+    <h4>Software suites/non programming skills</h4>
+    <p>
+      Versatile graphic design with Adobe Creative Suite (also Fuse to make 3d characters and I have made a talking 2d character for character animator).
+    </p>
+    <p>
+      3D Modeling with Blender. I am quite new to modeling, but have recently gotten more comfortable in the craft.
+    </p>
+    <p>
+      Dropping the bass with FL Studio. Recording avantgarde metal (did it around 2006) with Adobe Audition.
+    </p>
+    <p>
+      Making animations with After effects and editing videos with Premiere. Someone has to make the game trailers.
+    </p>
+    <h4>Project management</h4>
+    <p>
+      I have always managed projects with agile kanban and use either trello or a post it wall/back of locker.
+    </p>
+    <h4>Programming languages</h4>
+    <p>Most proficient with C# and Javascript (ES6 and the likes included), but comfortable with Python, SQL, Java, TypeScript, vb.net and PHP. Dabbling around with
+    GO, C, Lua and C++.</p>
+    <h4>Human languages</h4>
+    <p>Finnish, english and swedish. Best in finnish and quick to catch up in swedish as I was born in Sweden, but haven't lived there since the late 80's. English quite
+      as good as the writing in this CV is, I forget to say 'please' occasionally.</p>
+  </md-content>
+  <md-toolbar style="margin:0px; border-radius:0px;" class="md-hue-2 md-button md-accent" ng-click = "changeValue('hobbies')" layout="row"><span flex></span><h5>Hobbies</h5><span flex></span></md-toolbar>
+  <md-content class = "md-padding" ng-show="show.hobbies">
+    <h4>Stuff I actually (barely) have time to do</h4>
+    <p>I make games with Unity. I try to enroll in hackathons to really push myself and learn new stuff. As a vegetarian I like to cook vegan dishes and go to the gym to get myself in shape.
+    I also like to renovate and do small art projects in the Vaasa hacklab.</b>
+    <h4>Stuff I want to do</h4>
+    <p>Read more books.</p>
+  </md-content>
+</md-content>
+</md-content>
